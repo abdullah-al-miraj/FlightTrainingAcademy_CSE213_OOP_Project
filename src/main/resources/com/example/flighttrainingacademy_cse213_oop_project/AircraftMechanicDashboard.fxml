@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="712.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.flighttrainingacademy_cse213_oop_project.AircraftMechanicDashboardController">
+   <children>
+      <MenuBar fx:id="aircraftMechanicDashboardMenubar" layoutY="1.0" prefHeight="27.0" prefWidth="712.0">
+        <menus>
+            <Menu mnemonicParsing="false" onAction="#maintenanceBtnOnClick" text="Maintenance/Repair" />
+            <Menu mnemonicParsing="false" onAction="#rprtBtnOnClick" text="View/Edit Report" />
+            <Menu mnemonicParsing="false" text="Feedback/Certification" />
+            <Menu mnemonicParsing="false" text="Aircraft Manual" />
+            <Menu mnemonicParsing="false" text="Safety Standards/Protocols" />
+        </menus>
+      </MenuBar>
+      <Button layoutX="576.0" layoutY="512.0" mnemonicParsing="false" onMouseClicked="#signOutBtnOnClick" prefHeight="37.0" prefWidth="109.0" text="Sign Out" />
+   </children>
+</AnchorPane>

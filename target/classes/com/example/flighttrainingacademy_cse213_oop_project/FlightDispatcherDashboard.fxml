@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="455.0" prefWidth="875.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.flighttrainingacademy_cse213_oop_project.FlightDispatcherDashboardController">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="27.0" prefWidth="875.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Communications">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#communicationsMenuItemOnClick" text="Open" />
+               </items></Menu>
+          <Menu mnemonicParsing="false" text="Monitor Weather">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#weatherMenuItemOnClick" text="Open" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Emergency" />
+            <Menu mnemonicParsing="false" text="Fuel Management" />
+            <Menu mnemonicParsing="false" text="ATC" />
+            <Menu mnemonicParsing="false" text="Flight Safety Briefings" />
+        </menus>
+      </MenuBar>
+      <Button layoutX="741.0" layoutY="383.0" mnemonicParsing="false" onMouseClicked="#signOutBtnOnClick" prefHeight="40.0" prefWidth="110.0" text="Sign Out" />
+   </children>
+</AnchorPane>
