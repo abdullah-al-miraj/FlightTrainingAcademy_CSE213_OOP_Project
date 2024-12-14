@@ -22,7 +22,7 @@ public class MaintenanceAndRepairScheduleSceneController {
 
     @FXML
     void backBtnOnClick(MouseEvent event) throws IOException {
-        sceneLoader.switchScene("AircraftMechanicDashboardScene.fxml", event);
+        sceneLoader.switchScene("AircraftMechanicDashboard.fxml", event);
     }
 
 }
