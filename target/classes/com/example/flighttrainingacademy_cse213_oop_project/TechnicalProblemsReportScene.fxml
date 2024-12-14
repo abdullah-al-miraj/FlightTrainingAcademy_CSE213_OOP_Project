@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -13,11 +14,7 @@
          </font>
       </Label>
       <Button layoutX="14.0" layoutY="343.0" mnemonicParsing="false" onMouseClicked="#backBtnOnClick" prefHeight="27.0" prefWidth="90.0" text="Back" />
-      <Button layoutX="245.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#generateRprtBtnOnClick" text="Generate Report" />
-      <Label layoutX="184.0" layoutY="150.0" prefHeight="27.0" prefWidth="234.0" text="Click to generate and view Report">
-         <font>
-            <Font name="System Bold" size="14.0" />
-         </font>
-      </Label>
+      <Button layoutX="245.0" layoutY="294.0" mnemonicParsing="false" onMouseClicked="#generateRprtBtnOnClick" text="Generate Report" />
+      <TextArea fx:id="reportTextArea" layoutX="51.0" layoutY="74.0" prefHeight="200.0" prefWidth="498.0" promptText="Write a report..." wrapText="true" />
    </children>
 </AnchorPane>
