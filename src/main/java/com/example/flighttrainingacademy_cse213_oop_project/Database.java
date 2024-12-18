@@ -1,9 +1,12 @@
 package com.example.flighttrainingacademy_cse213_oop_project;
 
+import javafx.collections.ObservableList;
+import javafx.collections.ObservableListBase;
 import javafx.scene.control.Alert;
 
 import java.io.*;
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class Database {
 
@@ -152,5 +155,21 @@ public class Database {
             }
         }
         return false;
+    }
+
+    public static ArrayList<AircraftMechanic> getAircraftMechanics() {
+        ArrayList<AircraftMechanic> aircraftMechanicsList = new ArrayList<AircraftMechanic>();
+        AircraftMechanic tempInst;
+        File userFile = new File("AircraftMechanicUser.bin");
+        try {
+            FileInputStream fis = new FileInputStream(userFile);
+            ObjectInputStream ois = new ObjectInputStream(fis);
+            while (true) {
+                tempInst = (AircraftMechanic) ois.readObject();
+                aircraftMechanicsList.add(tempInst);
+            }
+        } catch (Exception Ignore) {
+            return aircraftMechanicsList;
+        }
     }
 }
